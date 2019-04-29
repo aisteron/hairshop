@@ -1,0 +1,61 @@
+name = Hairshop - by Naletko.by
+description = The theme was developed by Alexander Naletko with love for front-end.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[content_tax]    = 'Content Taxonomy'
+regions[content_left]   = 'Content Left'
+regions[content_right]  = 'Content Right'
+regions[content_bottom] = 'Content Bottom'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[welcome]        = 'Welcome'
+regions[podbor]         = 'Podbor'
+regions[cards]          = 'Cards'
+regions[news]           = 'News'
+regions[form]           = 'Form'
+regions[form_callback]  = 'Form Callback'
+regions[form_callback_2]= 'Form Callback Second'
+regions[action_left]    = 'Action left'
+regions[action_right]   = 'Action Right'
+regions[mask_left]      = 'Mask left'
+regions[mask_right]     = 'Mask Right'
+regions[cart_num]       = 'Cart number'
+regions[masters]        = 'Masters'
+regions[reviews]        = 'Reviews'
+regions[gallery]        = 'Gallery'
+regions[diplom]         = 'Diplom'
+regions[gallery_bottom] = 'Gallery Bottom'
+regions[downloads]      = 'Downloads'
+regions[actions]        = 'Actions'
+regions[prices]         = 'Prices'
+regions[footer]         = 'Footer'
+regions[footer_2]       = 'Footer Center'
+regions[footer_3]       = 'Footer Right'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+regions[nabutton]       = 'Na button'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/april.css
+
+scripts[] = js/naletko.js
+scripts[] = js/druway.js
+scripts[] = js/palitra.js
+scripts[] = js/nabutton.js
+scripts[] = js/jquery.mobile.custom.min.js

@@ -1,0 +1,300 @@
+/*! Переопределить классы для кнопок */
+@color-but: #d3127a;
+@pos-but: right;
+.pos-but {
+	right:40px;
+}
+.pos-buttons {
+	right:0px;
+}
+
+.my-social {
+	position: fixed;
+	bottom: 125px;
+	.pos-but;
+	z-index: 110;
+	display: none;
+	.my-vk {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 10px;
+		-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		background-image: url(../buttons/vk.png);
+		background-size: 60px;
+		opacity: 0.8;
+		background-color: @color-but;
+		&:hover {
+			opacity: 1;
+		}
+		
+	}
+	.my-wha {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 10px;
+		-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		background-image: url(../buttons/wha.png);
+		background-size: 60px;
+		opacity: 0.8;
+		background-color: @color-but;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.my-tel {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 10px;
+		-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		background-image: url(../buttons/tel.png);
+		background-size: 60px;
+		opacity: 0.8;
+		background-color: @color-but;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.my-vib {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 10px;
+		-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		background-image: url(../buttons/vib.png);
+		background-size: 60px;
+		opacity: 0.8;
+		background-color: @color-but;
+		&:hover {
+			opacity: 1;
+		}
+	}
+    .my-mail {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+        -webkit-border-radius: 50%;
+                    border-radius: 50%;
+        background-image: url(../buttons/mail.png);
+        background-size: 60px;
+        opacity: 0.8;
+        background-color: @color-but;
+        &:hover {
+            opacity: 1;
+        }
+    }
+	.my-mes {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 10px;
+		-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		background-image: url(../buttons/mess.png);
+		background-size: 60px;
+		opacity: 0.8;
+		background-color: @color-but;
+		&:hover {
+			opacity: 1;
+		}
+	}
+	.my-phone {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 10px;
+		-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		background-image: url(../buttons/phone.png);
+		background-size: 60px;
+		opacity: 0.8;
+		background-color: @color-but;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+.my-chat {
+	position: fixed;
+	bottom: 0px;
+	.pos-buttons;
+	width: 140px;
+	height: 140px;
+	z-index: 100;
+	.chat-rel {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		.chat-circle {
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		    width: 100px;
+		    height: 100px;
+		    position: absolute;
+		    margin: auto;
+		    background: fade(@color-but, 50);
+		    top: 0; left: 0; bottom: 0; right: 0;
+		    animation: back-pulse 3s infinite alternate;
+		    -webkit-animation: back-pulse 3s infinite alternate;
+		    -moz-animation: back-pulse 3s infinite alternate;
+		    -o-animation: back-pulse 3s infinite alternate;
+		}
+		.chat-pulse {
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		    width: 100px;
+		    height: 100px;
+		    position: absolute;
+		    margin: auto;
+		    border: 2px solid #eee;
+		    background: @color-but;
+		    top: 0; left: 0; bottom: 0; right: 0;
+		    animation: border-pulse 4s infinite alternate;
+		    -webkit-animation: border-pulse 4s infinite alternate;
+		    -moz-animation: border-pulse 4s infinite alternate;
+		    -o-animation: border-pulse 4s infinite alternate;			
+		}
+		.my-chat-button {
+			-webkit-border-radius: 50%;
+			        border-radius: 50%;
+		    width: 75px;
+		    height: 75px;
+		    position: absolute;
+		    margin: auto;
+		    background: @color-but;
+		    top: 0; left: 0; bottom: 0; right: 0;
+		    &:hover {
+		    	background: darken(@color-but, 10);
+		    }
+		    .chat-icon {
+		    	background-image:url(../buttons/but.png);
+		    	-ms-background-position-x: 14px;
+		    	    background-position-x: 14px;
+		    	background-position-y: center;
+		    	background-repeat: no-repeat;
+		    	background-size: 120px;
+		    	top: 0; left: 0; bottom: 0; right: 0;
+		    	-webkit-border-radius: 50%;
+			        border-radius: 50%;
+			    width: 70px;
+			    height: 70px;
+			    position: absolute;
+			    margin: auto;
+			    overflow: hidden;
+			    animation: chat-icon 4s infinite normal;
+			    -webkit-animation: chat-icon 4s infinite normal;
+			    -moz-animation: chat-icon 4s infinite normal;
+			    -o-animation: chat-icon 4s infinite normal;
+		    }
+		    .chat-icon-text {
+		    	background-image:url(../buttons/but.png);
+		    	-ms-background-position-x: -56px;
+		    	    background-position-x: -56px;
+		    	background-position-y: center;
+		    	background-repeat: no-repeat;
+		    	background-size: 120px;
+		    	top: 0; left: 0; bottom: 0; right: 0;
+		    	-webkit-border-radius: 50%;
+			        border-radius: 50%;
+			    width: 70px;
+			    height: 70px;
+			    position: absolute;
+			    margin: auto;
+			    overflow: hidden;
+			    animation: chat-icon-text 4s infinite normal;
+			    -webkit-animation: chat-icon-text 4s infinite normal;
+			    -moz-animation: chat-icon-text 4s infinite normal;
+			    -o-animation: chat-icon-text 4s infinite normal;
+		    }
+		    #chat {
+		    	-webkit-border-radius: 50%;
+			        border-radius: 50%;
+			    width: 75px;
+			    height: 75px;
+			    position: absolute;
+			    margin: auto;
+			    top: 0; left: 0; bottom: 0; right: 0;
+		    }
+		}
+	}
+}
+
+/* МОЯ КНОПКА */
+@keyframes chat-icon {
+  0% {
+    opacity: 1;
+    }
+  40% {
+    opacity: 1; 
+    }
+  50% {
+    opacity: 0;
+    }
+  100% {
+    opacity: 0;
+    }
+
+}
+@keyframes chat-icon-text {
+  0% {
+    opacity: 0;
+    }
+  40% {
+    opacity: 0; 
+    }
+  50% {
+    opacity: 1;
+    }
+  100% {
+    opacity: 1;
+    }
+
+}
+
+@keyframes back-pulse {
+  0% {
+    transform: scale(0.2, 0.2);
+        -webkit-transform: scale(0.2, 0.2);
+        -moz-transform: scale(0.2, 0.2);
+        -o-transform: scale(0.2, 0.2); 
+    } 
+  75% {
+    transform: scale(1, 1);
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -o-transform: scale(1, 1); 
+  }
+  100% {
+    transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2); 
+  }
+}
+
+@keyframes border-pulse {
+  0% {
+    transform: scale(0.5, 0.5);
+        -webkit-transform: scale(0.5, 0.5);
+        -moz-transform: scale(0.5, 0.5);
+        -o-transform: scale(0.5, 0.5); 
+      opacity: 1;
+    }
+  100% {
+    transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2); 
+      opacity: 0.1;
+  }
+}
+
+@keyframes pulsor {
+    to {
+       transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2); 
+    }
+}
+/* МОЯ КНОПКА */
