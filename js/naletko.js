@@ -286,4 +286,13 @@
 jQuery(document).ajaxSuccess(function() {
   resCart();
 //   eachTerms();
+
+// удалить лишний лейбл, который ломает верстку в админке 
+// http://prntscr.com/nosse2 
+
+if($('.admin-menu-search .control-label').length > 0)
+{
+   $('.admin-menu-search label.control-label').remove();
+}
+
 });
